@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="author" content="Andrew Thomas" />
+        <meta name="description" content="Andrew's website" />
+        <title>Andrew Thomas</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+        <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+        <script type="text/javascript" src="typed.js"></script>
+        <script src="https://use.fontawesome.com/39c25648cd.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+    
+                /*
+                * Plugin intialization
+                */
+                
+                var pages = ['Greeting', 'About', 'Leviathan', 'iMessage Commands', 'Information'];//, 'Leviathan', 'Website'];
+                
+                $('#pagepiling').pagepiling({
+                    sectionsColor: Array(pages.length).fill('white'),
+                    css3: false,
+                    navigation: {
+                        'position': 'right',
+                           'tooltips': pages
+                       },
+                    afterRender: function(){
+                        $('#pp-nav').addClass('custom-tooltip');
+                    },
+                    onLeave: function(index, nextIndex, direction) {
+                        if (nextIndex == pages.length) {
+                            $("#arrow").animate({
+                                bottom: "-10%"
+                            });
+                        }
+                        if (index == pages.length) {
+                            $("#arrow").animate({
+                                bottom: "0"
+                            });
+                        }
+                    }
+                });
+                
+                $('#arrow').click(function () {
+                    $.fn.pagepiling.moveSectionDown();
+                });
+                
+                // Type the greeting
+                $(function(){
+                    $("#hello").typed({
+                        stringsElement: $('#hello-strings'),
+                        typeSpeed: 30
+                    });
+                });
+            
+            });
+        </script>
+        
+    </head>
+    <body>
+        <table class="header">
+            <tr>
+                <td class="header-name">
+                    Andrew Thomas
+                </td>
+                <td class="header-buttons">
+                    <a class="social-button" href="mailto:hello@andrewthomas.ninja">
+                        <i class="fa fa-envelope fa-lg" style="padding: 10" aria-hidden="true"></i>
+                    </a>
+                </td>
+                <td class="header-buttons">
+                    <a class="social-button" href="https://www.linkedin.com/pub/andrew-thomas/110/a7a/80a">
+                        <i class="fa fa-linkedin-square fa-lg" style="padding: 10;" aria-hidden="true"></i>
+                    </a>
+                </td>
+                <td class="header-buttons">
+                    <a class="social-button" href="https://www.github.com/chattahippie">
+                        <i class="fa fa-github fa-lg" style="padding: 10;" aria-hidden="true"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        
+        <button id="arrow" class="footer">
+            <i class="fa fa-chevron-down"></i>
+        </button>
+        
+        <div id="pagepiling">
+            <div class="section bottom-border" id="section1">
+                <!-- I used zero length spaces around the br tag to avoid the typer typing spaces or open tags -->
+                <div id="hello-strings">
+                    <p><span class="header1">Hi,^500</span>​</br>​^300<span class="header2">I'm Andrew.</span></p>
+                </div>
+                <span id="hello"></span>
+            </div>
+            <div class="section bottom-border" id="section2">
+                <div>
+                    <div style="width: 45%;">
+                        <h2>About me</h2>
+                        <p>I'm a software developer currently studying at the University of Alabama.  I plan to graduate with with a Bachelors of Science degree with Honors in Computer Science this May (2017), and currently hold a 4.0 GPA.  Coding is both a hobby and a passion to me, and I take pride in having a diverse knowledge of programming languages. Outside of coding, I enjoy outdoor activities such as swimming, rowing, kayaking, mountain biking, and hiking.</p>
+                        <p>Some of my personal projects are outlined below. If any interest you, I would love to hear from you.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="section bottom-border" id="section3">
+                <div style="width: 45%; float: right;margin-right: 55px;">
+                    <h1>Leviathan</h1>
+                    <p>Leviathan is a object-oriented programming language designed to prototype and draft ideas.</p>
+                    <p>Its highly versatile grammar allows the user to quickly jot down ideas in an almost pseudo-code syntax, then see their ideas execute immediately.  Ideas can be expressed as verbosely as needed, or using the shortcut syntax built into Leviathan to reduce the time needed to move a program from your thoughts into the computer.</p>
+                    <p>Leviathan supports features such as lambda functions, anonymous objects, python-like for loop iteration, and include statements to make it a powerful language.  Check out its repository <a href="https://github.com/chattahippie/Leviathan">here</a> to see the source and get started!</p>
+                </div>
+            </div>
+            <div class="section bottom-border" id="section4">
+                <div style="position: relative;">
+                    <div style="position: absolute; z-index: -1;height:100%;width:90%;top:0;left:5%;">
+                        <section>
+                            <div class="blue-bubble">
+                                <p>!fortune</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="gray-bubble">
+                                <p>It does not do to leave a live dragon out of your calculations.</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="blue-bubble">
+                                <p>!weather Tuscaloosa</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="gray-bubble">
+                                <p>Current weather in Tuscaloosa => 79 °F ☁ - Wind => 3.38 mph ESE - Humidity => 61 % - Pressure => 29.94 inHg</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div style="width: 45%;position: relative;left: 27.5%;z-index: 1;">
+                        <div class="chat-message-blue-header">
+                            <h2>iMessage Commands</h2>
+                        </div>
+                        <div style="text-align:left;margin-top: 50px;">
+                            <p>iMessage Commands is a proof of concept project to show how a user can use Apple's iMessage to interface with command line programs.  To show how this works, I have created an AppleScript event handler to allow users away from a terminal to access the popular programs <a href="https://en.wikipedia.org/wiki/Fortune_(Unix)">fortune</a> and <a href="https://github.com/fcambus/ansiweather">ansiweather</a>.</p>
+                            <p>Simply messaging <code style="font-weight:bold;">!fortune</code> or <code style="font-weight:bold;">!weather &lt;city&gt;</code> to an iMessage account with the handler set to this script will elicit an immediate response to the user with the response of the program.</p>
+                            <p>This powerful concept can be applied to just about any command line program, which can vastly increase a user's productivity from a phone.  Using this proof of concept, it is easy to configure new commands while keeping the data inputted from the user sanitized. Everything needed to get started can be found <a href="https://github.com/chattahippie/Commands-for-iMessage">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section bottom-border" id="section5">
+                <div style="width: 50%; position: relative; left: 25%;">
+                    <h1>So let's get in touch</h1>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="mailto:hello@andrewthomas.ninja">
+                                    <div>
+                                        <i class="fa fa-envelope fa-lg" style="padding: 10" aria-hidden="true"></i>
+                                        <p>hello@andrewthomas.ninja</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.linkedin.com/pub/andrew-thomas/110/a7a/80a">
+                                    <div>
+                                        <i class="fa fa-linkedin-square fa-lg" style="padding: 10" aria-hidden="true"></i>
+                                        <p>LinkedIn</p>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://www.github.com/chattahippie">
+                                    <div>
+                                        <i class="fa fa-github fa-lg" style="padding: 10" aria-hidden="true"></i>
+                                        <p>GitHub</p>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
