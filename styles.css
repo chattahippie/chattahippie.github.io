@@ -203,6 +203,8 @@
   #section1 .header2 {
     font-size: 48;
     font-weight: lighter; }
+  #section1 #hello-strings {
+    display: none; }
 
 /************ Section 2 Style ***************/
 #section2 {
