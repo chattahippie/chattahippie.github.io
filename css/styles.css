@@ -210,7 +210,7 @@
 #section2 {
   text-align: left;
   font-family: "Lato", Calibri, Arial, sans-serif;
-  background-image: url(avatar.jpg);
+  background-image: url("../images/avatar.jpg");
   background-attachment: fixed;
   background-size: auto 60%;
   background-repeat: no-repeat;
@@ -229,7 +229,7 @@
 #section3 {
   text-align: left;
   font-family: "Lato", Calibri, Arial, sans-serif;
-  background-image: url(code.jpg);
+  background-image: url("../images/code.jpg");
   background-attachment: fixed;
   background-size: auto 60%;
   background-repeat: no-repeat;
