@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://andrewthomas.ninja/about/</loc>
+    <loc>http://andrewthomas.ninja/about/</loc>
     <lastmod>2017-07-01T21:14:22-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://andrewthomas.ninja/</loc>
+    <loc>http://andrewthomas.ninja/</loc>
     <lastmod>2017-07-01T21:14:22-04:00</lastmod>
     <priority>0</priority>
   </url>
