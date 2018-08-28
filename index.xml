@@ -2,50 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Andrew Thomas</title>
-    <link>http://andrewthomas.ninja/</link>
+    <link>https://andrewthomas.ninja/</link>
     <description>Recent content on Andrew Thomas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>true</copyright>
     <lastBuildDate>Sat, 01 Jul 2017 21:14:22 -0400</lastBuildDate>
     
-	<atom:link href="http://andrewthomas.ninja/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andrewthomas.ninja/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hi, I&#39;m Andrew</title>
-      <link>http://andrewthomas.ninja/about/</link>
+      <link>https://andrewthomas.ninja/about/</link>
       <pubDate>Sat, 01 Jul 2017 21:14:22 -0400</pubDate>
       
-      <guid>http://andrewthomas.ninja/about/</guid>
+      <guid>https://andrewthomas.ninja/about/</guid>
       <description>My name is Andrew Thomas, and I am a Full Stack Developer located in the Washington D.C. area.
 I&amp;rsquo;m passionate about making technology more accessible and easier to use for everyone. While studying Computer Science at the University of Alabama, I was a member of the founding team for CrimsonHacks. Acting as the User Experience Director for the event, the first MLH sponsored hackathon in the state of Alabama hosted over 150 participants.</description>
     </item>
     
     <item>
       <title>Print(d)</title>
-      <link>http://andrewthomas.ninja/</link>
+      <link>https://andrewthomas.ninja/</link>
       <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://andrewthomas.ninja/</guid>
+      <guid>https://andrewthomas.ninja/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CrimsonHacks 2017</title>
-      <link>http://andrewthomas.ninja/</link>
+      <link>https://andrewthomas.ninja/</link>
       <pubDate>Fri, 24 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://andrewthomas.ninja/</guid>
+      <guid>https://andrewthomas.ninja/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spendle</title>
-      <link>http://andrewthomas.ninja/</link>
+      <link>https://andrewthomas.ninja/</link>
       <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://andrewthomas.ninja/</guid>
+      <guid>https://andrewthomas.ninja/</guid>
       <description></description>
     </item>
     
